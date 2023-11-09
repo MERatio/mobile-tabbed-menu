@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 250px;
+  max-width: 100%;
+  height: 444px;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  position: relative;
+}
+
+.tab-nav {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab-link {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  fill: #6b7280;
+  cursor: pointer;
+}
+
+.tab-link:hover {
+  fill: #2563eb;
+}
+
+.tab-link svg {
+  width: 20px;
+  height: 20px;
+}
