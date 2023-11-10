@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Tabbed Menu</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <div class="container">
       <nav class="tab-nav">
         <ul class="tab-list">
           <li>
-            <a href="#" class="tab-link">
+            <a href="#home" class="tabLink tab-link">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                 <path
                   d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
@@ -20,7 +21,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="tab-link">
+            <a href="#photos" class="tabLink tab-link">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                 <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                 <path
@@ -30,7 +31,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="tab-link">
+            <a href="#people" class="tabLink tab-link">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                 <path
@@ -42,6 +43,17 @@
           </li>
         </ul>
       </nav>
+      <main>
+        <section class="content" data-href="#home">
+          <h2>Home</h2>
+        </section>
+        <section class="content" data-href="#photos">
+          <h2>Photos</h2>
+        </section>
+        <section class="content" data-href="#people">
+          <h2>People</h2>
+        </section>
+      </main>
     </div>
   </body>
 </html>

@@ -44,11 +44,24 @@ body {
   cursor: pointer;
 }
 
-.tab-link:hover {
+.tab-link:hover,
+.tab-link.active {
   fill: #2563eb;
 }
 
 .tab-link svg {
   width: 20px;
   height: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+[data-href] {
+  display: none;
+}
+
+[data-href].active {
+  display: block;
 }
